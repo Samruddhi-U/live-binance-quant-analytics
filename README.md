@@ -24,7 +24,7 @@ The application focuses on BTC–ETH pair trading and demonstrates real-time dat
 - Python
 - Binance Futures WebSocket API
 - Pandas & NumPy
-- Statsmodels (ADF Test)
+- Statsmodels 
 - Plotly
 - Streamlit
 
@@ -90,6 +90,25 @@ Z > +threshold → SELL BTC / BUY ETH
 Z < −threshold → BUY BTC / SELL ETH
 
 Otherwise → No trade
+
+## Transparency in ChatGPT Usage
+
+ChatGPT served as a support tool for learning and development throughout this project.
+It assisted in comprehending Binance WebSocket APIs, troubleshooting Streamlit and Git problems, and organizing the analytics framework (spread, Z-score, and ADF test).
+The author carried out the final system design, implementation, testing, and validation.
+ChatGPT was utilized solely for advice and problem-solving, rather than for automated creation of solutions.
+Example prompts contained:
+
+"How can one calculate the rolling Z-score for pair trading?"
+"How to execute the ADF test on a time series using Python?"
+- "What is the best way to organize a Streamlit dashboard for real-time data?"
+
+## Architecture
+
+The following diagram illustrates the high-level architecture of the system, including data ingestion, storage, analytics, and alert flow.
+
+![Architecture Diagram](Architecture.drawio.png)
+
 
 ## Author
 Samruddhi Ubhad  
